@@ -9,9 +9,9 @@ const renderPokemon = (pokemon) => {
     console.log(pokemon);
     htmlString += ` 
     <section>
-        <img src="" alt=""></img>
-        <h1> </h1>
-        <p> </p>
+        <img src="${pokemon.sprite}" alt="This is a Pokemon"></img>
+        <h1>${pokemon.name}</h1>
+        <p>${pokemon.name} (#${pokemon.id}) is a ${pokemon.types} type pokemon.</p>
     </section>
     `;
   });
@@ -19,4 +19,4 @@ const renderPokemon = (pokemon) => {
   cardContainer.innerHTML = htmlString;
 };
 
-renderPokemon();
+renderPokemon(renderPokemon);
