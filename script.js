@@ -8,10 +8,12 @@ const renderPokemon = (pokemon) => {
   pokemonArray.forEach((pokemon) => {
     console.log(pokemon);
     htmlString += ` 
-    <section>
-        <img src="${pokemon.sprite}" alt="This is a Pokemon"></img>
-        <h1>${pokemon.name}</h1>
-        <p>${pokemon.name} (#${pokemon.id}) is a ${pokemon.types} type pokemon.</p>
+    <section class="card">
+        <img src="${pokemon.sprite}" alt="This is a Pokemon" class="card__image"></img>
+        <div class="card__content">
+        <h1 class="card__heading">${pokemon.name}</h1>
+        <p class="card__text">${pokemon.name} (#${pokemon.id}) is a ${pokemon.types} type pokemon.</p>
+        </div>
     </section>
     `;
   });
