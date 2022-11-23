@@ -17,7 +17,7 @@ const renderPokemon = (pokemon) => {
           }</h1>
           <p class="card__text">${
             pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
-          } (#${pokemon.id}) is a ${pokemon.types} type pokemon.</p>
+          } (#${pokemon.id}) is a ${pokemon.types.join(" & ")} type pokemon.</p>
           </div>
       </section>
       `;
@@ -27,11 +27,3 @@ const renderPokemon = (pokemon) => {
 };
 
 renderPokemon(renderPokemon);
-
-// pokemonArray.forEach((pokemon) => {
-//   const capitalLetter =
-//     pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-//   console.log(pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1));
-// });
-
-pokemonArray.forEach((pokemon) => {});
